@@ -164,34 +164,6 @@
                         }
                       })
                     }
-                  },
-                  delete: (row) => {
-                    if (row) {
-                      let content = '<p>确认要删除该自定义服务区配置吗？'
-                      let okText = '确认删除'
-                      // 删除二次确认框
-                      this.$Modal.confirm({
-                        title: '消息',
-                        content: content,
-                        loading: true,
-                        okText: okText,
-                        onOk: () => {
-                          let params = {}
-                          params.id = row.id
-                          // ajax提交数据
-                          api.notice.delete(params).then(response => {
-                            this.$Modal.remove()
-                            const result = response.data
-                            if (result.code === '200') {
-                              this.loadTableData()
-                              this.$Message.success('删除成功')
-                            } else {
-                              this.$Message.error(`删除状态失败:${result.message}`)
-                            }
-                          })
-                        }
-                      })
-                    }
                   }
                 }
               })

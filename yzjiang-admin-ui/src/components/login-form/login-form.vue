@@ -2,14 +2,14 @@
 <template>
   <Form ref="loginForm" :model="form" :rules="rules" @keydown.enter.native="handleSubmit">
     <FormItem prop="userName">
-      <i-input v-model="form.userName" placeholder="请输入用户名">
+      <i-input v-model="form.userName" placeholder="请输入用户名1">
         <span slot="prepend">
           <Icon :size="16" type="ios-person"></Icon>
         </span>
       </i-input>
     </FormItem>
     <FormItem prop="password">
-      <i-input type="password" v-model="form.password" placeholder="请输入密码">
+      <i-input type="password" v-model="form.password" placeholder="请输入密码1">
         <span slot="prepend">
           <Icon :size="14" type="md-lock"></Icon>
         </span>

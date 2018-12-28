@@ -31,9 +31,7 @@ export default {
       'index'
     ]),
     handleSubmit ({ userName, password, kaptcha }) {
-      console.log('111111111')
       this.handleLogin({ userName, password, kaptcha }).then(res => {
-        console.log('22222222222')
         console.log(res)
         this.$router.push({
           name: 'home'
