@@ -2,21 +2,21 @@
 <template>
   <Form ref="loginForm" :model="form" :rules="rules" @keydown.enter.native="handleSubmit">
     <FormItem prop="userName">
-      <i-input v-model="form.userName" placeholder="请输入用户名1">
+      <i-input v-model="form.userName" placeholder="请输入用户名3">
         <span slot="prepend">
           <Icon :size="16" type="ios-person"></Icon>
         </span>
       </i-input>
     </FormItem>
     <FormItem prop="password">
-      <i-input type="password" v-model="form.password" placeholder="请输入密码1">
+      <i-input type="password" v-model="form.password" placeholder="请输入密码3">
         <span slot="prepend">
           <Icon :size="14" type="md-lock"></Icon>
         </span>
       </i-input>
     </FormItem>
     <FormItem prop="kaptcha" class="kaptcha">
-      <i-input v-model="form.kaptcha" placeholder="请输入验证码">
+      <i-input v-model="form.kaptcha" placeholder="请输入验证码3">
         <span slot="prepend">
           <Icon :size="4" type="ios-pricetag"></Icon>
         </span>
