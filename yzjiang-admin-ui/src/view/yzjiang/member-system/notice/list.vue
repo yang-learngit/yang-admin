@@ -72,7 +72,9 @@
       videoPlayer
     },
     props: {
-      _cache: {type: String, default: ''}
+      _cache: {
+        type: String, default: ''
+      }
     },
     data () {
       return {
