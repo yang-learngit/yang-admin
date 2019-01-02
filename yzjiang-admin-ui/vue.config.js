@@ -15,7 +15,7 @@ const resolve = dir => {
 //   ? '/static/'
 //   : '/'
 const BASE_URL = '/'
-const DEV_TARGET_HOST = "http://localhost:8086"
+const DEV_TARGET_HOST = "http://47.106.212.4:8086"
 
 module.exports = {
   // Project deployment base
