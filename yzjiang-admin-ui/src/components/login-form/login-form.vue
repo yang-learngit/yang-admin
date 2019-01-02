@@ -9,14 +9,14 @@
       </i-input>
     </FormItem>
     <FormItem prop="password">
-      <i-input type="password" v-model="form.password" placeholder="请输入密码3">
+      <i-input type="password" v-model="form.password" placeholder="请输入密码43">
         <span slot="prepend">
           <Icon :size="14" type="md-lock"></Icon>
         </span>
       </i-input>
     </FormItem>
     <FormItem prop="kaptcha" class="kaptcha">
-      <i-input v-model="form.kaptcha" placeholder="请输入验证码3">
+      <i-input v-model="form.kaptcha" placeholder="请输入验证码33">
         <span slot="prepend">
           <Icon :size="4" type="ios-pricetag"></Icon>
         </span>
